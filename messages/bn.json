@@ -1,0 +1,16 @@
+{
+  "Index": {
+    "Bangla": "বাংলা",
+    "Nav": {
+      "Home": "হোম",
+      "Admission": "এডমিশন",
+      "Academic": "একাডেমিক",
+      "Gallery": "গ্যালারি",
+      "Notice": "নোটিশ",
+      "Management": "পরিচালনা পর্ষদ"
+    },
+    "Button": {
+      "one": "যোগাযোগ"
+    }
+  }
+}

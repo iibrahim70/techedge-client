@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { notFound } from "next/navigation";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -12,13 +13,21 @@ export const metadata: Metadata = {
   description: "Empowering Students with Cutting-Edge Technology Education.",
 };
 
+const locales = ["en", "bn"];
+
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: {
+    locale: string;
+  };
 }) {
+  if (!locales.includes(locale)) notFound();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={montserrat.className}>{children}</body>
     </html>
   );
