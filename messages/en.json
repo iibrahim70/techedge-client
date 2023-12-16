@@ -1,0 +1,16 @@
+{
+  "Index": {
+    "Bangla": "Bangla",
+    "Nav": {
+      "Home": "Home",
+      "Admission": "Admission",
+      "Academic": "Academic",
+      "Gallery": "Gallery",
+      "Notice": "Notice",
+      "Management": "Management Committee"
+    },
+    "Button": {
+      "one": "Contact"
+    }
+  }
+}

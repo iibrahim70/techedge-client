@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link as NavigationLink } from "@/navigation";
 
 const Navbar = () => {
+  const t = useTranslations("Index");
+
   return (
     <nav>
       {/* first nav */}
@@ -47,19 +51,27 @@ const Navbar = () => {
           <div className="flex justify-between">
             {/* left */}
             <div className="flex justify-between gap-5">
-              {" "}
-              <Link href="#">হোম</Link>
-              <Link href="#">এডমিশন</Link>
-              <Link href="#">একাডেমিক</Link>
-              <Link href="#">গ্যালারি</Link>
-              <Link href="#">নোটিশ</Link>
-              <Link href="#">পরিচালনা পর্ষদ</Link>
+              <Link href="#">{t("Nav.Home")}</Link>
+              <Link href="#">{t("Nav.Admission")}</Link>
+              <Link href="#">{t("Nav.Academic")}</Link>
+              <Link href="#">{t("Nav.Gallery")}</Link>
+              <Link href="#">{t("Nav.Notice")}</Link>
+              <Link href="#">{t("Nav.Management")}</Link>
             </div>
 
             {/* right */}
-            <div>
-              <button>বাংলা</button>
-              <button>যোগাযোগ</button>
+            <div className="flex justify-between gap-5">
+              <div className="flex gap-2 bg-white text-black py-1 px-2 rounded-xl font-semibold">
+                <NavigationLink href="/" locale="en">
+                  <small>ENG</small>
+                </NavigationLink>
+
+                <NavigationLink href="/" locale="bn">
+                  <small>{t("Bangla")}</small>
+                </NavigationLink>
+              </div>
+
+              <button>{t("Button.one")}</button>
             </div>
           </div>
         </div>
