@@ -10,9 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         blue: "#14213D",
+        yellow: "#AF8F3F",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;
