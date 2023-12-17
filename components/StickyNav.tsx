@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import ThemeSwitcher from "./ThemeSwitcher";
-import LanguageSwitcher from "./LanguageSwitcher";
+import ThemeSwitcher from "./switchers/ThemeSwitcher";
+import LanguageSwitcher from "./switchers/LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import { Button } from "./ui/button";
 
 const StickyNav = () => {
   const t = useTranslations("Index");
@@ -57,7 +58,7 @@ const StickyNav = () => {
           </div>
 
           {/* right */}
-          <div className="flex justify-between gap-10">
+          <div className="flex justify-between gap-5">
             <div className="flex items-center gap-2">
               {/* language switcher */}
               <LanguageSwitcher />
@@ -66,7 +67,7 @@ const StickyNav = () => {
               <ThemeSwitcher />
             </div>
 
-            <button>{t("Button.one")}</button>
+            <Button size="sm">{t("Button.one")}</Button>
           </div>
         </div>
       </div>

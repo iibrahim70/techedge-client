@@ -9,7 +9,7 @@ const Navbar = () => {
         {/* left */}
         <div className="flex items-center gap-2 w-1/3">
           <Image
-            src="/images/hasina-logo.png"
+            src="/images/logo/hasina-logo.png"
             height={50}
             width={50}
             alt="Hasina Logo"
@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* middle */}
         <div className="w-1/3 flex justify-center">
           <Image
-            src="/images/college-logo.png"
+            src="/images/logo/college-logo.png"
             height={50}
             width={50}
             alt="College Logo"
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex gap-2 justify-end items-center w-1/3">
           <p className="hidden md:flex">মানুষ হওয়ার জন্য শিক্ষা</p>
           <Image
-            src="/images/mujib-logo.png"
+            src="/images/logo/mujib-logo.png"
             height={50}
             width={50}
             alt="Mujib Logo"
