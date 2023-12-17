@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Link as NavigationLink } from "@/navigation";
 import ThemeSwitcher from "./ThemeSwitcher";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const t = useTranslations("Index");
@@ -64,15 +64,7 @@ const Navbar = () => {
             <div className="flex justify-between gap-10">
               <div className="flex items-center gap-2">
                 {/* language switcher */}
-                <div className="flex gap-2 bg-white text-black py-1 px-2 rounded-xl font-semibold">
-                  <NavigationLink href="/" locale="en">
-                    <small>ENG</small>
-                  </NavigationLink>
-
-                  <NavigationLink href="/" locale="bn">
-                    <small>{t("Bangla")}</small>
-                  </NavigationLink>
-                </div>
+                <LanguageSwitcher />
 
                 {/* theme switcher */}
                 <ThemeSwitcher />
