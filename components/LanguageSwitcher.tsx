@@ -11,7 +11,7 @@ const LanguageSwitcher = () => {
       <Link locale="en" href="/">
         <small
           className={clsx(
-            pathname.includes("/en") ? "bg-yellow py-1 px-2 rounded-full" : ""
+            pathname.includes("/en") ? "bg-primary py-1 px-2 rounded-full" : ""
           )}
         >
           ENG
@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
       <Link locale="bn" href="/">
         <small
           className={clsx(
-            pathname.includes("/bn") ? "bg-yellow py-1 px-2 rounded-full" : ""
+            pathname.includes("/bn") ? "bg-primary py-1 px-2 rounded-full" : ""
           )}
         >
           বাংলা
