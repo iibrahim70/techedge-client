@@ -2,8 +2,11 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 const ThemeSwitcher = () => {
+  const t = useTranslations("Index");
+
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -23,12 +26,12 @@ const ThemeSwitcher = () => {
   return (
     <div className="flex items-center gap-2 bg-white text-black py-1 px-2 rounded-xl">
       <small className="font-semibold">
-        {theme === "light" ? "Dark" : "Light"}
+        {theme === "light" ? <p>{t("Mode.Dark")}</p> : <p>{t("Mode.Light")}</p>}
       </small>
 
       <button
         onClick={toggleTheme}
-        className="text-2xl antialiased text-yellow"
+        className="text-2xl antialiased text-primary"
       >
         {theme === "light" ? <BsToggleOff /> : <BsToggleOn />}
       </button>
