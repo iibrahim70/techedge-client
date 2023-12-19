@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "@/navigation";
+import { Link } from "@/src/navigation";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 

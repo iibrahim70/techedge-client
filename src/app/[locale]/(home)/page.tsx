@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+import Hero from "@/src/components/Hero";
+import Navbar from "@/src/components/Navbar";
 
 const HomePage = () => {
   return (
