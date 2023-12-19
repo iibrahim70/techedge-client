@@ -43,7 +43,7 @@ const Hero = () => {
               width="0"
               height="0"
               sizes="100dvw"
-              className="h-[50vh] lg:h-[75vh] w-full rounded-b-xl object-cover object-center"
+              className="h-[50vh] lg:h-[70vh] w-full rounded-b-xl object-cover object-center"
             />
           </SwiperSlide>
         ))}
