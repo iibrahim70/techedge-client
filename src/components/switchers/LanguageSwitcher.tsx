@@ -1,7 +1,7 @@
 "use client";
 import { Link } from "@/src/navigation";
-import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const LanguageSwitcher = () => {
   const pathname = usePathname();

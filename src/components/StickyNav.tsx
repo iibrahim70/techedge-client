@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
+import { Button } from "./ui/button";
 import ThemeSwitcher from "./switchers/ThemeSwitcher";
 import LanguageSwitcher from "./switchers/LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
-import { Button } from "./ui/button";
 
 const StickyNav = () => {
   const t = useTranslations("Index");
@@ -17,7 +17,7 @@ const StickyNav = () => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
 
-      if (currentScrollPos <= 82) {
+      if (currentScrollPos <= 0) {
         // At or above the height of the top navigation bar
         setIsSticky(false);
       } else if (prevScrollPos > currentScrollPos) {
@@ -39,16 +39,16 @@ const StickyNav = () => {
   }, []);
 
   return (
-    <div
+    <nav
       className={clsx(
-        "bg-blue text-white transition-all duration-700",
-        isSticky && "fixed top-0 left-0 right-0"
+        "bg-blue dark:bg-black text-white transition-all duration-700",
+        isSticky && "fixed top-0 left-0 right-0 z-50"
       )}
     >
       <div className="section-width py-4">
         <div className="flex items-center justify-between flex-wrap gap-y-5">
           {/* left */}
-          <div className="flex justify-between gap-5">
+          <div className="flex justify-between gap-5 flex-wrap">
             <Link href="#">{t("Nav.Home")}</Link>
             <Link href="#">{t("Nav.Admission")}</Link>
             <Link href="#">{t("Nav.Academic")}</Link>
@@ -71,7 +71,7 @@ const StickyNav = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -1,8 +1,8 @@
 "use client";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -24,6 +24,7 @@ const Hero = () => {
 
   return (
     <section>
+      {/* slider */}
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -52,6 +53,7 @@ const Hero = () => {
         ))}
       </Swiper>
 
+      {/* bottom */}
       <div className="bg-black text-white/90">
         <div className="section-width py-5 flex items-center justify-between gap-10 lg:gap-5">
           {/* left */}
@@ -59,7 +61,7 @@ const Hero = () => {
             <Image
               width={40}
               height={40}
-              src="/images/logo/awward-logo.png"
+              src="/images/logo/award-logo.png"
               alt="Awward Logo"
             />
             <p>{t("Awards.InnovativeProject")}</p>
@@ -70,7 +72,7 @@ const Hero = () => {
             <Image
               width={40}
               height={40}
-              src="/images/logo/awward-logo.png"
+              src="/images/logo/award-logo.png"
               alt="Awward Logo"
             />
             <p>{t("Awards.SocialProgram")}</p>
@@ -81,7 +83,7 @@ const Hero = () => {
             <Image
               width={40}
               height={40}
-              src="/images/logo/awward-logo.png"
+              src="/images/logo/award-logo.png"
               alt="Awward Logo"
             />
             <p>{t("Awards.BestUniversity")}</p>
