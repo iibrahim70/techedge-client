@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { ThemeProvider } from "@/src/components/providers/ThemeProvider";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import ThemeProviders from "@/src/components/providers/ThemeProviders";
 import { cn } from "@/src/lib/utils";
 import "./globals.css";
 
@@ -36,7 +36,9 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={cn(montserrat.className)}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProviders>{children}</ThemeProviders>
+          <ThemeProvider attribute="class" defaultTheme="system">
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
