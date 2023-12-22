@@ -19,6 +19,44 @@
       "InnovativeProject": "Best Innovative Project Award 2022",
       "SocialProgram": "Social Program Award, Bangladesh 2021",
       "BestUniversity": "Best University Architecture Award, Bangladesh 2021"
+    },
+    "CollegeOverview": {
+      "Title": "We help college girls to develop as responsible citizens of the world.",
+      "Description": "Our college in Bangladesh is a leading institution of higher education, providing students with all the knowledge, skills and experience to enable them to penetrate life in today's changing world. Located in a prime location, our college has a supportive history education that continues to develop and advance."
+    },
+    "OurSubjects": {
+      "Title": "Our Subjects",
+      "Description": "Our HSC program is organized with the best subjects in the world",
+      "Science": {
+        "Subname": "Science",
+        "Mathematics": "Advanced Mathematics",
+        "Physics": "Physics",
+        "Chemistry": "Chemistry",
+        "Statistics": "Statistics",
+        "Botany": "Botany",
+        "Zoology": "Zoology",
+        "ComputerScience": "Computer Science"
+      },
+      "Humanities": {
+        "Subname": "Humanities",
+        "History": "History",
+        "Economics": "Economics",
+        "Geography": "Geography",
+        "PoliticalScience": "Political Science",
+        "Sociology": "Sociology",
+        "Psychology": "Psychology",
+        "Philosophy": "Philosophy"
+      },
+      "Commerce": {
+        "Subname": "Commerce",
+        "Accounting": "Accounting",
+        "BusinessStudies": "Business Studies",
+        "Economics": "Economics",
+        "Statistics": "Statistics",
+        "Marketing": "Marketing",
+        "Finance": "Finance",
+        "Entrepreneurship": "Entrepreneurship"
+      }
     }
   }
 }
