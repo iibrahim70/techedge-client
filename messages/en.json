@@ -14,6 +14,11 @@
     "Mode": {
       "Dark": "Dark",
       "Light": "Light"
+    },
+    "Awards": {
+      "InnovativeProject": "Best Innovative Project Award 2022",
+      "SocialProgram": "Social Program Award, Bangladesh 2021",
+      "BestUniversity": "Best University Architecture Award, Bangladesh 2021"
     }
   }
 }
