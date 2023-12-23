@@ -17,7 +17,7 @@ const StickyNav = () => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
 
-      if (currentScrollPos <= 0) {
+      if (currentScrollPos <= 82) {
         // At or above the height of the top navigation bar
         setIsSticky(false);
       } else if (prevScrollPos > currentScrollPos) {
@@ -67,7 +67,7 @@ const StickyNav = () => {
               <ThemeSwitcher />
             </div>
 
-            <Button size="sm">{t("Button.one")}</Button>
+            <Button size="sm">{t("Button.Contact")}</Button>
           </div>
         </div>
       </div>

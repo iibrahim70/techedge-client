@@ -9,7 +9,8 @@
       "Management": "Management Committee"
     },
     "Button": {
-      "one": "Contact"
+      "Contact": "Contact",
+      "SeeMore": "See More"
     },
     "Mode": {
       "Dark": "Dark",
@@ -29,13 +30,13 @@
       "Description": "Our HSC program is organized with the best subjects in the world",
       "Science": {
         "Subname": "Science",
-        "Mathematics": "Advanced Mathematics",
+        "Mathematics": "Mathematics",
         "Physics": "Physics",
         "Chemistry": "Chemistry",
         "Statistics": "Statistics",
         "Botany": "Botany",
         "Zoology": "Zoology",
-        "ComputerScience": "Computer Science"
+        "ComputerScience": "Science"
       },
       "Humanities": {
         "Subname": "Humanities",
