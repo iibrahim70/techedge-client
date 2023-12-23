@@ -1,5 +1,8 @@
 import { useTranslations } from "next-intl";
+import { Button } from "./ui/button";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
+import Title from "./Title";
 
 const CollegeOverview = () => {
   const t = useTranslations("Index");
@@ -15,21 +18,22 @@ const CollegeOverview = () => {
       <div className="bg-[url('/images/bg/rectangle.png')] text-white/90">
         <div className="section-width py-20 flex items-center justify-between flex-col lg:flex-row gap-20">
           {/* left */}
-          <div className="flex flex-col gap-10 justify-start items-start lg:w-1/3">
-            <div className="flex flex-row items-center justify-center gap-5">
-              <hr className="border-primary border-2 w-20 rounded" />
-              <p>{t("OurSubjects.Title")}</p>
-            </div>
+          <div className="lg:w-1/3">
+            <Title
+              title={t("OurSubjects.Title")}
+              description={t("OurSubjects.Description")}
+            />
 
-            <h2 className="text-3xl font-bold">
-              {t("OurSubjects.Description")}
-            </h2>
+            <Button size="lg" className="flex gap-2">
+              {t("Button.SeeMore")}
+              <MdOutlineArrowOutward />
+            </Button>
           </div>
 
           {/* right */}
-          <div className="flex items-center justify-between gap-10 w-full">
+          <div className="flex items-center justify-between gap-10 flex-wrap md:flex-nowrap w-full">
             {/* first */}
-            <div className="border-primary border-2 p-5 flex items-center justify-between gap-5">
+            <div className="border-primary border-2 p-10 md:p-5 flex items-center justify-between gap-5 w-full">
               <div className="space-y-1">
                 <h3 className="font-semibold text-primary mb-2">
                   {t("OurSubjects.Science.Subname")}
@@ -52,7 +56,7 @@ const CollegeOverview = () => {
             </div>
 
             {/* second */}
-            <div className="border-primary border-2 p-5 flex items-center  justify-between gap-5">
+            <div className="border-primary border-2 p-10 md:p-5 flex items-center  justify-between gap-5 w-full">
               <div className="space-y-1">
                 <h3 className="font-semibold text-primary mb-2">
                   {t("OurSubjects.Humanities.Subname")}
@@ -75,7 +79,7 @@ const CollegeOverview = () => {
             </div>
 
             {/* last */}
-            <div className="border-primary border-2 p-5 flex items-center justify-between gap-5">
+            <div className="border-primary border-2 p-10 md:p-5 flex items-center justify-between gap-5 w-full">
               <div className="space-y-1">
                 <h3 className="font-semibold text-primary mb-2">
                   {t("OurSubjects.Commerce.Subname")}
